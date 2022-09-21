@@ -18,9 +18,9 @@ var menuLinks = [
 ];
 
 menuLinks.forEach((item) => {
-  let menuItems = document.createElement("a");
-  menuItems.textContent = item.text;
-  menuItems.setAttribute("href", `/${item.text}`);
-  topMenuEl.append(menuItems);
-  console.log(menuItems);
+  let menuLink = document.createElement("a");
+  menuLink.textContent = item.text;
+  menuLink.setAttribute("href", item.href);
+  topMenuEl.append(menuLink);
+  console.log(menuLink);
 });
